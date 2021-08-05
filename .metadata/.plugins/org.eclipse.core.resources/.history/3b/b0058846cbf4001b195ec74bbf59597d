@@ -1,0 +1,36 @@
+04_Log4jdbc.txt
+
+# Log4jdbc
+
+ - jdbc의 실행 로그를 자동으로 찍어주는 라이브러리
+
+# Maven dependency
+
+	<dependency>
+    		<groupId>org.bgee.log4jdbc-log4j2</groupId>
+    		<artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
+    		<version>1.16</version>
+	</dependency>
+
+# DB연결 설정 부분의 driverClassName과 jdbcUrl을 수정
+	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" />
+		<property name="jdbcUrl" value="jdbc:log4jdbc:oracle:thin:@localhost:1521/XEPDB1"/>
+		<property name="username" value="hr"/>
+		<property name="password" value="1234"/>
+	</bean>
+
+	
+# resource 폴더에 설정파일 등록
+
+ - log4jdbc.log4j2.properties
+ - log4jdbc.spylogdelegator.name=net.sf.log4jdbc.log.slf4j.Slf4jSpyLogDelegator
+ 
+# logger를 등록
+
+ jdbc.sqlonly	Logs only SQL. SQL executed within a prepared statement is automatically shown with it's bind arguments replaced with the data bound at that position, for greatly increased readability.
+ jdbc.sqltiming	Logs the SQL, post-execution, including timing statistics on how long the SQL took to execute.
+ jdbc.audit	Logs ALL JDBC calls except for ResultSets. This is a very voluminous output, and is not normally needed unless tracking down a specific JDBC problem.
+ jdbc.resultset	Even more voluminous, because all calls to ResultSet objects are logged.
+ jdbc.resultsettable	Log the jdbc results as a table. Level debug will fill in unread values in the result set.
+ jdbc.connection	Logs connection open and close events as well as dumping all open connection numbers. This is very useful for hunting down connection leak problems. 

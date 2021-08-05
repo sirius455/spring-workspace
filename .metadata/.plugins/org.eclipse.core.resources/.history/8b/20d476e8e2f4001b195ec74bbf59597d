@@ -1,0 +1,7 @@
+02_REST.txt
+
+# REST (Representational State Tranfer)
+
+ - 하나의 URI가 하나의 고유한 리소스를 응답하도록 설계하는 개념
+ - 웹 서버가 웹 브라우저 뿐 아니라 다른 어플리케이션들과도 연결될 수 있는 방식
+ - GET/POST/PUT/DELETE/.. 등의 Http Method를 적극 활용한다

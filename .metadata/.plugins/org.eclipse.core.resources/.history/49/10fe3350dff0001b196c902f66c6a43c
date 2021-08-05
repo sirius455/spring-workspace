@@ -1,0 +1,29 @@
+package com.kgitbank.model;
+
+import java.util.Date;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NonNull;
+
+@AllArgsConstructor
+@Data
+public class Employee {
+	
+	@NonNull
+	private int    employee_id;
+	private String first_name;
+	@NonNull
+	private String last_name;
+	@NonNull
+	private String email;
+	private String phone_number;
+	private Date   hire_date;
+	@NonNull
+	private String job_id;
+	private double salary;
+	private double commission_pct;
+	private int    manager_id;
+	private int    department_id;
+	
+}

@@ -1,0 +1,13 @@
+04_Log4jdbc.txt
+
+# Log4jdbc
+
+ - jdbc의 실행 로그를 자동으로 찍어주는 라이브러리
+
+# mavendependency
+
+	<dependency>
+    		<groupId>org.bgee.log4jdbc-log4j2</groupId>
+    		<artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
+    		<version>1.16</version>
+	</dependency>

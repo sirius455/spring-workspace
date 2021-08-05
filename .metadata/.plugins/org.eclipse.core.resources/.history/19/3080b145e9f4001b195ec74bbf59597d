@@ -1,0 +1,5 @@
+package com.kgitbank.rest.model;
+
+public class FruitVO {
+
+}

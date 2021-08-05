@@ -1,0 +1,7 @@
+04_Log4jdbc.txt
+
+# Log4jdbc
+
+ - jdbc의 실행 로그를 자동으로 찍어주는 라이브러리
+
+# maven dependency

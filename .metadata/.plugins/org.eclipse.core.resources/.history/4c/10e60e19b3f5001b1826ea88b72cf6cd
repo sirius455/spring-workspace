@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3># CRUD 연습에 사용했던 테이블을 통해 다음을 만들어주세요</h3>
+	
+	<ul>
+		<li>갱신 버튼을 누르면 페이지가 변하지 않으면서 CRUD테이블의 모든 내용을 </li>
+	</ul>
+
+<hr>
+	
+</body>
+</html>

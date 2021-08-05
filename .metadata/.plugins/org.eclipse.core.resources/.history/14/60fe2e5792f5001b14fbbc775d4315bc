@@ -1,0 +1,17 @@
+package com.kgitbank.rest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.springframework.test.web.servlet.MockMvc;
+
+public class ControllerTest {
+	
+	private MockMvc mockMvc;
+	
+	@Test
+	public void homeTest() {
+		
+	}
+
+}

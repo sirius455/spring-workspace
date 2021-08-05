@@ -1,0 +1,17 @@
+package com.kgitbank.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.kgitbank.mapper.FoodsMapper;
+import com.kgitbank.model.Foods;
+
+@Service
+public class MenuService {
+	
+	@Autowired
+	FoodsMapper foodsMapper;
+	
+	public boolean addFood(Foods food)
+	
+}

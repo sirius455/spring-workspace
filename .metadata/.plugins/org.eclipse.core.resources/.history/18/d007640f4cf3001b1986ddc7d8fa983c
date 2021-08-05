@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>추가하기</title>
+</head>
+<body>
+
+	<ul type="none">
+		<li>아이디 : <input type ="text" name="id" form="user_info"></li>
+		<li>비밀번호 : <input type ="text" name="password" form="user_info"></li>
+	
+		<li><input type="submit" value="등록" form="user_info"></li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+package com.kgitbank.service;
+
+@Service
+public class MenuService {
+
+}

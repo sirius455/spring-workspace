@@ -1,0 +1,20 @@
+package com.kgitbank.dbpractice;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class JDBCTest {
+
+	
+	
+	@Test
+	public void testGetConnection() {
+		try {
+			Class.forName("oracle.jdbc.dirver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

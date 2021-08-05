@@ -1,0 +1,5 @@
+package com.kgitbank.mapper;
+
+public class FoodMapper {
+
+}

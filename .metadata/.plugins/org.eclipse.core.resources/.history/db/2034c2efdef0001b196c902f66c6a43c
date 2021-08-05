@@ -1,0 +1,13 @@
+package com.kgitbank.model;
+
+import lombok.NonNull;
+
+@Data
+public class Employee {
+	
+	@NonNull
+	int employee_id;
+	String first_name;
+	String last_
+	
+}

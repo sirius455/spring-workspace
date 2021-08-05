@@ -1,0 +1,6 @@
+package com.kgitbank.model;
+
+@Data
+public class Employee {
+
+}

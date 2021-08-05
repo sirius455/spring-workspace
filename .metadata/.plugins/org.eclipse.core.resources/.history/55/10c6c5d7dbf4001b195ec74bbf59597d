@@ -1,0 +1,24 @@
+package com.kgitbank.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.kgitbank.mapper.FoodsMapper;
+import com.kgitbank.model.Foods;
+
+@Service
+public class FoodsServiceImpl{
+	
+	@Autowired
+	FoodsMapper foodsMapper;
+	
+	public boolean addFood(Foods food) {
+		System.out.println("동일한 이름의 메뉴가 있는지 체크하는 코드입니다. 50줄");
+		System.out.println("메뉴 이름 형식 체크. 150줄");
+		System.out.println("널값 체크. 30줄");
+		foodsMapper.foodsInsert(food);
+		
+		return foodsMapper.foodsInsert(food) > 0;
+	}
+	
+}

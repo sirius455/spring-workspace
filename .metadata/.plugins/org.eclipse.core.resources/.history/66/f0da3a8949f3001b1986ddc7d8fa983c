@@ -1,0 +1,20 @@
+package com.kgitbank.practice;
+
+
+
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import lombok.extern.log4j.Log4j;
+@Log4j
+@Controller
+@RequestMapping("/food/")
+public class FoodsController {
+	
+	@GetMapping("CRUD")
+	public void foods() {
+		System.out.println("¿Ô´Ù");
+	}
+}

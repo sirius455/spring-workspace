@@ -1,0 +1,8 @@
+06_Web Project Tier.txt
+
+# 화면 계층 (Presentation Tier)
+	-> 화면에 보여주는 코드를 작성하는 계층
+# 비즈니스 계층 (Business Tier)
+	-> 고객이 원하는 요구사항을 구현하는 코드들
+# 영속 계층 (데이터 계층, Persistence Tier)
+	-> Mybatis를 통해 생성되는 BD 접근 코드들

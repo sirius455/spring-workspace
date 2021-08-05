@@ -1,0 +1,62 @@
+package com.kgitbank.dbpractice;
+
+
+
+
+
+
+import static org.junit.Assert.fail;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.kgitbank.mapper.FoodsMapper;
+import com.kgitbank.model.Employee;
+import com.kgitbank.model.Foods;
+
+import lombok.extern.log4j.Log4j;
+@Log4j
+@Controller
+@RequestMapping("/food/")
+
+public class FoodsController {
+	
+	@Autowired
+	private FoodsMapper foodsMapper;
+	
+	@GetMapping("CRUD")
+	public void foods() {
+		System.out.println("왔다");
+	}
+	
+	@GetMapping("plus")
+	public void getPlus() {
+		System.out.println("왔다");
+	}
+	
+	@PostMapping("plus")
+	public void postPlus(Foods food) {
+		Foods f = new Foods(food.getFood_num(), food.getFood_name(), food.getFood_price());
+		foodsMapper.foodsInsert(f);
+		
+	}
+	
+	@GetMapping("search")
+	public void getSerach() {
+		List<Foods> foods = foodsMapper.getFoodsList();
+		
+		if(foods.size() == 0) {
+			syso ("안꺼내진듯");
+		}
+		
+		for (Foods food : foods) {
+			System.out.println(food);
+		}
+	}
+	
+}

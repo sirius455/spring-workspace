@@ -1,0 +1,12 @@
+package com.kgitbank.service;
+
+import org.springframework.stereotype.Service;
+
+import com.kgitbank.model.Foods;
+
+@Service
+public class MenuService {
+	
+	Foods foods;
+	
+}
