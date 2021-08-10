@@ -1,5 +1,0 @@
-package com.kgitbank.mapper;
-
-public interface EmployeeMapper {
-
-}

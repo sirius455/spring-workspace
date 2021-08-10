@@ -1,5 +1,0 @@
-02_HikariCP 연결.txt
-
- # HikariCP Github을 참조하여 연결을 생성한다.
- 
- # xml 방식으로는 다음과 같이 등록한다

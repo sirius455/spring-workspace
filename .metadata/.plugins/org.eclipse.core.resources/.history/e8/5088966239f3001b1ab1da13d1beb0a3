@@ -1,9 +1,0 @@
-package com.kgitbank.mapper;
-
-import com.kgitbank.model.Employee;
-
-public interface FoodsMapper {
-	
-	public int foodInsert(Foods new_employee);
-	
-}

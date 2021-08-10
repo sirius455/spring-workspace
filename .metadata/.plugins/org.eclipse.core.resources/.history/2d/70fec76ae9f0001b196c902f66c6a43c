@@ -1,7 +1,0 @@
-package com.kgitbank.mapper;
-
-public interface EmployeeMapper {
-	
-	public List<Employee> getEmpList ();
-	
-}
